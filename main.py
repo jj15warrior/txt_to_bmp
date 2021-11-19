@@ -12,7 +12,7 @@ def get_div(i):
     return math.ceil(math.sqrt(i))
 
 
-f = open("new.jpg", "r", encoding='utf-8')
+f = open("input.txt", "r", encoding='utf-8')
 
 pan_tadeusz = f.read()
 
@@ -44,4 +44,4 @@ for x in range(x_range):
 array = np.array(pixels, dtype=np.uint8)
 
 new_image = Image.fromarray(array)
-new_image.save('new.bmp')
+new_image.save('converted.bmp')
